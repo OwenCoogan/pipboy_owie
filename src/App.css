@@ -1,11 +1,36 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap');
+
+body {
   text-align: center;
+  background-color:#0D0D0D;
+  color:#0BD904;
+  font-family: 'Oxygen Mono', monospace;
+  
+  height:100vh;
+  overflow:hidden;
+}
+header {
+  display:flex;
+}
+main{
+  position:relative;
+}
+
+header * {
+  margin:auto;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 100%;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
   pointer-events: none;
+  position:absolute;
+
 }
+
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -13,20 +38,6 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
 
 @keyframes App-logo-spin {
   from {
