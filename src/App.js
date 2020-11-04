@@ -1,11 +1,16 @@
+// Core
+
 import React from 'react';
-import logo from './logo.svg';
+
+
+// Files
 import './App.css';
+//Components
 
 import Header from "./components/mains/header"
 import Clock from './components/mains/clock';
 import WeatherControl from './components/mains/weather';
-
+import Slider from "./components/mains/mainSlider";
 
 
 function App() {
@@ -13,12 +18,10 @@ function App() {
     <div class="App">
       <header class="App">
         <Clock/><Header/><WeatherControl/>
-        
       </header>
        <main>
-         <img src={logo} className="App-logo" alt="logo" />
+         <Slider/>
        </main>
-      <footer></footer>
     </div>
   );
 }
